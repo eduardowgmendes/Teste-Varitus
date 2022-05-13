@@ -1,11 +1,11 @@
 package questao3;
 
 import java.util.Arrays;
+import java.util.List;
 
 public class Main {
 
     public static void main(String[] args) {
-        PrintCrescentOrderAlgorithm printCrescentOrderAlgorithm = new PrintCrescentOrderAlgorithm(Arrays.asList(1, 1, 1));
-        System.out.printf("%s", printCrescentOrderAlgorithm.sort(false));
+        System.out.print(PrintCrescentOrderAlgorithm.sort(Arrays.asList(2, 3, 1), false));
     }
 }

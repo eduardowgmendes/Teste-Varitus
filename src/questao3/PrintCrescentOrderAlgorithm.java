@@ -5,21 +5,7 @@ import java.util.List;
 
 public class PrintCrescentOrderAlgorithm {
 
-    private List<Integer> values;
-
-    public PrintCrescentOrderAlgorithm(List<Integer> values) {
-        this.values = values;
-    }
-
-    public List<Integer> getValues(boolean decOrdering) {
-        return values;
-    }
-
-    public void setValues(List<Integer> values) {
-        this.values = values;
-    }
-
-    public List<Integer> sort(boolean decOrder) {
+    public static List<Integer> sort(List<Integer> values, boolean decOrder) {
         if (decOrder) {
             values.sort((o1, o2) -> {
                 if (o1.equals(o2)) {
